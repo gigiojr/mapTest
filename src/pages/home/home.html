@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Map Test
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div id="map-canvas">
+    <div>
+      <button ion-fab color="secondary" style="margin-bottom: 10px; margin-top: 10px;" (click)="refreshMap()">
+        <ion-icon name="locate"></ion-icon>
+      </button>
+      <div style="width: 30px; margin-right: 31px; bottom: 150px; right: 0; position: absolute;">
+        <button (click)="changeLevel('1')" style="font-size: 2.5rem; margin-bottom: 5px; height: 30px; width: 30px; background-color: #6FB105; text-align: center; color: #f4f4f4">1</button>
+        <button (click)="changeLevel('2')" style="font-size: 2.5rem; margin-bottom: 5px; height: 30px; width: 30px; background-color: #6FB105; text-align: center; color: #f4f4f4">2</button>
+        <button (click)="changeLevel('3')" style="font-size: 2.5rem; margin-bottom: 5px; height: 30px; width: 30px; background-color: #6FB105; text-align: center; color: #f4f4f4">3</button>
+        <button (click)="changeLevel('4')" style="font-size: 2.5rem; margin-bottom: 5px; height: 30px; width: 30px; background-color: #6FB105; text-align: center; color: #f4f4f4">4</button>
+      </div>
+      <div style="width: 30px; margin-right: 41px; bottom: 30px; right: 0; position: absolute;">
+        <button style="margin-bottom: 10px; margin-top: 10px;" (click)="getMyLocation()">
+          <ion-icon name="locate"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</ion-content>
